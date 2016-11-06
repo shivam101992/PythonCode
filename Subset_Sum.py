@@ -1,3 +1,5 @@
+#Sum of each subset
+
 def subsets(nums):
   if nums is None: return None
   subsets = [[]] 
