@@ -28,6 +28,6 @@ def partition(t, start, end):
 
 if __name__=="__main__":
 	t = [int(x) for x in raw_input().split()]
-	s = 0
+	s = len(t) // 2
 	e = len(t)-1
 	print quickSort(t,s,e)				
