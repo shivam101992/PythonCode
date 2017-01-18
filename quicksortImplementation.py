@@ -11,7 +11,7 @@ def partition(t, start, end):
 	left = start + 1
 	right = end
 	while not done:
-		while t[left] <= pivot and left <= right:
+		while left <= right and t[left] <= pivot:
 			left += 1
 		while t[right] >= pivot and right >= left:
 			right -= 1		
@@ -28,6 +28,6 @@ def partition(t, start, end):
 
 if __name__=="__main__":
 	t = [int(x) for x in raw_input().split()]
-	s = len(t) // 2
+	s = 0
 	e = len(t)-1
 	print quickSort(t,s,e)				
